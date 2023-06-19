@@ -6,7 +6,11 @@ on:
       - dev
 jobs:
   Test:
-    environment: testing
+    env: 
+      MONGO_CLUSTER_ADDRESS: my-mongo-db.wtbnup8.mongodb.net
+      MONGODB_USERNAME: ${{ secrets.MONG0DB_USERNAME }}
+      MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
+      PORT: 3000
     runs-on: ubuntu-latest
     steps:
       - name: Get Code
@@ -30,4 +34,4 @@ jobs:
     steps:
       - name: Output information
         run: |        
-          echo "..."
+          echo " This is a secret: ${{ secrets.MONGODB_USERNAME }}"
