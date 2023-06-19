@@ -1,0 +1,6 @@
+{
+    "yaml.schemas": {
+        "file:///Users/tamiilore/.vscode/extensions/docsmsft.docs-yaml-1.0.0/dist/toc.schema.json": "/toc\\.yml/i",
+        "https://json.schemastore.org/eslintrc.json": "file:///Users/tamiilore/Desktop/01%20Starting%20Project/.github/workflows/deploy.yml"
+    }
+}
